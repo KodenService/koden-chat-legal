@@ -27,7 +27,7 @@
 <header>
   <div class="wrap">
     <h1>Politique de confidentialité – Koden Chat</h1>
-    <p class="sub">Dernière mise à jour : 2 novembre 2026</p>
+    <p class="sub">Dernière mise à jour : 6 novembre 2026 (v2)</p>
   </div>
 </header>
 
@@ -45,7 +45,7 @@
     <tr><th>Donnée</th><th>Utilisation</th><th>Où elle est conservée</th></tr>
     <tr><td>Pseudo choisi par vous</td><td>Affiché aux personnes à proximité avec qui vous échangez</td><td>Sur votre téléphone, et transmis aux téléphones proches avec vos messages</td></tr>
     <tr><td>Identifiant aléatoire</td><td>Généré sur votre téléphone au premier lancement, pour distinguer les utilisateurs. Il n'est lié ni à votre numéro, ni à votre nom, ni à votre compte Google.</td><td>Sur votre téléphone, et transmis avec vos messages</td></tr>
-    <tr><td>Contenu des messages</td><td>Acheminer vos messages vers leurs destinataires</td><td>Sur les téléphones de l'expéditeur, du destinataire et des téléphones qui relaient le message (voir section 3)</td></tr>
+    <tr><td>Contenu des messages</td><td>Acheminer vos messages vers leurs destinataires. Les messages privés sont chiffrés de bout en bout (voir section 3).</td><td>Sur les téléphones de l'expéditeur, du destinataire et des téléphones qui relaient le message (voir section 3)</td></tr>
   </table>
   <p>L'application ne collecte <strong>pas</strong> votre numéro de téléphone, vos contacts, vos photos, votre position géographique ni vos identifiants publicitaires.</p>
 
@@ -55,7 +55,7 @@
     <li>Les messages du salon public « À proximité » sont visibles par toutes les personnes proches qui utilisent l'application.</li>
     <li>Les messages privés ne sont affichés qu'à leur destinataire.</li>
   </ul>
-  <p class="note"><strong>Important :</strong> dans la version actuelle, les messages privés ne sont pas encore chiffrés de bout en bout. Le chiffrement est en cours de développement et cette politique sera mise à jour lorsqu'il sera disponible. D'ici là, nous vous recommandons de ne pas envoyer d'informations sensibles (mots de passe, codes, données bancaires) par Koden Chat.</p>
+  <p class="note"><strong>Chiffrement :</strong> les messages privés sont protégés par un <strong>chiffrement de bout en bout</strong> (bibliothèque libsodium). Ils sont chiffrés sur le téléphone de l'expéditeur avec la clé publique du destinataire, et seul le destinataire peut les déchiffrer avec sa clé privée, qui ne quitte jamais son téléphone. Les téléphones qui relaient le message ne voient qu'un contenu illisible, et Koden Service n'y a pas accès. Les messages du salon public « À proximité » ne sont pas chiffrés : ils sont destinés à être lus par toutes les personnes proches.</p>
 
   <h2>4. Autorisations demandées</h2>
   <table>
@@ -71,6 +71,12 @@
 
   <h2>6. Partage des données</h2>
   <p>Koden Service ne vend, ne loue et ne partage aucune donnée personnelle. Comme l'application ne dispose d'aucun serveur, Koden Service n'a techniquement pas accès à vos messages.</p>
+
+  <h2>6 bis. Signaler un message et bloquer un utilisateur</h2>
+  <ul>
+    <li><strong>Bloquer :</strong> par un appui long sur un message, vous pouvez bloquer son auteur. La liste des utilisateurs bloqués est enregistrée uniquement sur votre téléphone ; leurs messages ne vous sont plus affichés.</li>
+    <li><strong>Signaler :</strong> si vous signalez un message, Koden Chat ouvre votre application e-mail avec un message pré-rempli adressé à <a href="mailto:contact@kodens.ci">contact@kodens.ci</a> (pseudo et identifiant de l'auteur, date et contenu du message signalé). Rien n'est envoyé tant que vous ne validez pas l'envoi. Koden Service utilise ces signalements uniquement pour traiter les abus et les supprime une fois le signalement traité.</li>
+  </ul>
 
   <h2>7. Durée de conservation et suppression</h2>
   <ul>
@@ -89,7 +95,7 @@
   <p>Conformément à la loi ivoirienne n° 2013‑450 du 19 juin 2013 relative à la protection des données à caractère personnel, vous disposez notamment d'un droit d'accès, de rectification, d'opposition et de suppression. Les données de Koden Chat étant stockées uniquement sur les téléphones, vous pouvez les supprimer à tout moment en désinstallant l'application. Pour toute question, écrivez à <a href="mailto:contact@kodens.ci">contact@kodens.ci</a>. Vous pouvez également saisir l'ARTCI, autorité de protection des données en Côte d'Ivoire.</p>
 
   <h2>11. Modifications</h2>
-  <p>Cette politique peut évoluer, notamment lors de l'ajout du chiffrement ou de nouvelles fonctions. La date de mise à jour figure en haut de cette page. En cas de changement important, une information sera affichée dans l'application.</p>
+  <p>Cette politique peut évoluer, notamment lors de l'ajout de nouvelles fonctions. La date de mise à jour figure en haut de cette page. En cas de changement important, une information sera affichée dans l'application.</p>
 </main>
 
 <footer>© 2026 Koden Service – Koden Chat · <a href="mailto:contact@kodens.ci">contact@kodens.ci</a></footer>
